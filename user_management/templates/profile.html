@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile of {{ user.username }}</title>
+</head>
+<body>
+    <h1>Profile of {{ user.username }}</h1>
+    
+    <div>
+        <p><strong>username:</strong> {{ user.username }}</p>
+        <p><strong>password:</strong> {{ user.password }}</p>
+        <p><strong>First Name:</strong> {{ user.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+        <p><strong>Patronymic:</strong> {{ user.patronymic }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Phone Number:</strong> {{ user.phone_number }}</p>
+        <p><strong>Position:</strong> {{ user.position.name  }}</p>
+        <p><strong>Organization:</strong> {{ user.organization.name  }}</p>
+        <p><strong>Department:</strong> {{ user.department.name  }}</p>
+        <p><strong>Registration Date:</strong> {{ user.registration_date }}</p>
+    </div>
+</body>
+</html>

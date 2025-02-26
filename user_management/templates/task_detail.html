@@ -1,0 +1,20 @@
+<h1>{{ task.name }}</h1>
+<p>{{ task.description }}</p>
+<h2>Stages:</h2>
+<ul>
+    {% for stage in stages %}
+        <li>{{ stage.name }}</li>
+    {% endfor %}
+</ul>
+<h2>Files:</h2>
+<ul>
+    {% for file in files %}
+        <li><a href="{{ file.file.url }}">{{ file.file.name }}</a></li>
+    {% endfor %}
+</ul>
+<h2>Photos:</h2>
+<ul>
+    {% for photo in photos %}
+        <li><img src="{{ photo.image.url }}" alt="{{ photo.description }}"></li>
+    {% endfor %}
+</ul>
